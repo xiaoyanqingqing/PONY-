@@ -1,0 +1,124 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+
+
+
+// main
+.main{
+    width: 100%;
+    height: auto;
+}
+// 轮播图
+#carousel {width:100%; height:702px;  position:relative;}
+#carousel ul li{height:702px;opacity: 0;position: absolute;left: 0;top: 0;z-index: 0;}
+#carousel ul li.ac{z-index: 5;}
+#carousel>a{position: absolute;top: 50%;margin-top: -10px;height: 40px;line-height: 32px;text-align: center;width: 40px;font-size: 40px;vertical-align: middle;color: #fff;z-index:6;}
+#goPrev{left: 0;}
+#goNext{right: 0;}
+
+// 视频
+.eve-row {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+    white-space: nowrap;
+}
+
+.eve-col-cu {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 10px;
+    text-align: left;
+    margin-left: 0px;
+    white-space: normal;
+}
+.eve-text .text-content {
+    height: auto;
+    width: 100%;
+    font-family: inherit;
+}
+
+.eve-col-cu.eve-col-align-center > .eve-component {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.videos-component {
+    width: 1184px;
+    height: 450px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.videos-component .video-show {
+    width: 821px;
+    height: 450px;
+    margin-right: 16px;
+}
+.videos-component > div {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+.videos-component .video-show embed {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+// 
+.videos-component .video-thumb {
+    width: 240px;
+    overflow: scroll;
+}
+// star
+.star1{
+    width: 100%;
+    height: 420px;
+    
+}
+.star1 ul{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.star1 ul li{
+    width:280px;
+    height:400px;
+}
+// hot
+.hot1{
+    width: 100%;
+    height: 800px;
+
+
+}
+.hot1 ul{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hot1 ul li{
+    width: 280px;
+    height: 310px;
+}
+.hot1 ul li img{
+    width: 280px;
+    height: 200px;
+}
+.hot1 ul li p{
+    width: 280px;
+    height: 48px;
+    text-align: center;
+}
+.hot1 ul li span{
+    width:280px;
+    height: 60px;
+    display: block;
+    text-align: center;
+}

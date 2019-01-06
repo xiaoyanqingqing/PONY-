@@ -1,0 +1,78 @@
+/* footer */
+.eve-grid-auto {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+.eve-row {
+    display: block;
+    text-align: left;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+.eve-grid-auto.eve-col-align-center > .eve-row{
+    text-align: center;
+    display: block;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+.eve-col-cu{
+    display: inline-block;
+    vertical-align: top;
+    min-height: 10px;
+    text-align: left;
+    margin-left: 0px;
+    white-space: normal;
+}
+.eve-col-cu.eve-col-align-center > .eve-row {
+    text-align: center;
+}
+.eve-col-cu {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 10px;
+    text-align: left;
+    margin-left: 0px;
+    white-space: normal;
+}
+/* logo */
+.eve-image > div {
+    text-align: center;
+    font-size: 0;
+    line-height: 1;
+}
+.eve-image img {
+    border: 0;
+    display: inline;
+}
+/* 购物指南 */
+
+.eve-text .text-content {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+}
+/* p */
+.eve-text .text-content p {
+    margin: 0;
+    padding: 0;
+}
+/* span */
+.eve-text .text-content span {
+    line-height: 1em;
+}
+
+/* 关注我们 */
+.eve-col-cu.eve-col-align-right > .eve-row {
+    text-align: right;
+}
+
+/* 最底部 */
+/* 侧边栏 */
+#YSF-BTN-HOLDER{
+
+}
+
+
