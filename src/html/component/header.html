@@ -1,14 +1,25 @@
-<!-- header -->
-<div class="header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/component/header.css">
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/header"></script>
+</head>
+<body>
+	<!-- header -->
+<header>
 		<!--  pony-ceiling-->
 		<div class="pony-ceiling">
 			<div class="pony-ceiling-container clearfix">
 				<ul>
 					<li>
 						<i class="iconfont icon-user"></i>
-						<a href="javascript:;" id="js-login-in">登录</a>
+						<a href="http://localhost:2000/html/login.html" id="js-login-in">登录</a>
 						<span>/</span>
-						<a href="javascript:;" id="js-user-register">注册</a>
+						<a href="http://localhost:2000/html/register.html" id="js-user-register">注册</a>
 					</li>
 					<li><a href="/help">帮助</a></li>
 					<li><i class="iconfont icon-icon3"></i><a class="online-customer-service" href="javascript:;">客服中心</a></li>
@@ -19,7 +30,7 @@
 		<div class="pony-navbar">
 			<div class="navbar-wrapper">
 				<a href="/">
-					<img class="pony-logo" src="static/images/logo.png" alt="pony" class="pony-logo">
+					<img class="pony-logo" src="../static/images/logo.png" alt="pony" class="pony-logo">
 				</a>
 
 				<ul class="navbar-list">
@@ -60,7 +71,7 @@
 						<div class="input-search">
 							<button class="btn-search" type="submit"></button>
 							<input type="text" name="q" class="search-input" placeholder="搜索" value="" autocomplete="off">
-							<a href="/buyer/cart">
+							<a href="">
 
 							</a>
 						</div>
@@ -68,4 +79,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
+</body>
+</html>

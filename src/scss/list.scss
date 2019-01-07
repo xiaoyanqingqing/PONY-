@@ -1,0 +1,352 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+.main{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin: 30px 0 ;
+    border:1px solid red ;
+    min-height: 10px;
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+.main-wrap{
+   width: 1184px;
+   height: auto;
+   margin: auto;
+
+}
+// nav 
+.goods-nav {
+    display: inline-block;
+    width: 200px;
+    // min-height: 200px;
+    height: 1215px;
+    font-size: 12px;
+   
+}
+// top
+// .goods-nav .category{
+//     width: 200px;
+   
+// }
+.category .level-1 .category-text{
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
+.category h2{
+    font-size: 16px;
+}
+.category .level-1 .level-2{
+    margin: 8px 0;
+}
+.category .level-1 img{
+    background-color: #eee;
+    margin-right: 13px;
+    
+}
+
+
+
+// bottom
+.goods-nav .bottom{
+    width: 200px;
+    // height:743px;
+    // background: red;
+}
+
+
+
+// content
+.goods-content {
+    display: inline-block;
+    width: 968px;
+    vertical-align: top;
+    font-size: 12px;
+    margin-left: 16px;
+    // height: 200px;
+    // background: red;
+}
+// header
+.goods-content .content-header {
+    width: 968px;
+    height: 36px;
+    position: relative;
+}
+.content-header h2 {
+    font-size: 16px;
+   margin-bottom: 16px;
+}
+.content-filter{
+    height: 26px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.filter-banner .js-item-sort {
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 24px;
+    cursor: pointer;
+}
+.filter-banner .js-item-sort img {
+    margin-left: 5px;
+    color: #999;
+    width: 16px;
+    height: 10px;
+}
+.filter-banner .js-item-sort .active {
+    background: #fff;
+    color: #002E73;
+    border-color: #dfdfdf;
+}
+.content-filter .filter-form {
+    display: inline-block;
+}
+.content-filter .filter-banner{
+    display: inline-block;
+}
+.content-filter .filter-form {
+    display: inline-block;
+}
+.filter-form fieldset {
+    padding: 0;
+}
+
+.filter-form .input-group {
+
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+}
+.filter-form .input-group span {
+    width: 15px;
+    padding: 0;
+    line-height: 24px;
+    position: absolute;
+    left: 0;
+    border: 0;
+    font-size: 12px;
+}
+.filter-form .input-group input {
+    width: 60px;
+    padding-left: 13px;
+    margin-right: 0;
+    height: 24px;
+    line-height: 12px;
+    font-size: 12px;
+    display: inline-block;
+    
+}
+.filter-form .line {
+    line-height: 24px;
+}
+.filter-form .operations > button {
+    height: 24px;
+    vertical-align: middle;
+    padding: 0 16px;
+    margin-left: 10px;
+    color: #fff;
+    border-color: transparent;
+    background-color: #002E73;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+// 
+.items-list{
+    width: 968px;
+    height: 1656px; 
+}
+.items-list ul{
+    padding: 0 24px;
+}
+.items-list ul li{
+    width: 184px;
+    height: 260px;
+    margin: 0 0 16px;
+    line-height: 1;
+    border: 0;
+    float: left;
+    position: relative;
+    
+}
+.item-box {
+    position: absolute;
+    width: 184px;
+    height: 260px;
+    padding: 12px 11px;
+    border: 1px solid transparent;
+}
+.item-box a img{
+    width: 160px;
+    height: 160px;
+}
+.color-count {
+    // width: 160px;
+    // height: 37px;
+    font-size: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+.product-name {
+    color: #5b5b5b;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item-box .product-name> a {
+    color: #0277bd;
+}
+.product-price {
+    position: relative;
+    font-weight: initial;
+    padding: 0;
+}
+.now-price {
+    color: #5b5b5b;
+}
+
+
+// item-list-footer
+
+.pull-right {
+    
+    height: 42px;
+    float: right !important;
+}
+.pagination {
+  
+    height: 32px;
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    
+}
+label{
+    margin-right: 2px;
+    color: #666;
+}
+.pagination .total{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination .size{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination .selectric-wrapper {
+    width: 74px;
+    height: 32px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+.pagination .selectric, .pagination select {
+    border: 1px solid #ddd;
+    width: 74px;
+    padding: 6px 5px;
+    background: #fff;
+    position: relative;
+}
+.selectric .label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 5px;
+    line-height: 1.5em;
+    height: 1.5em;
+    color: #5b5b5b;
+}
+.pagination .selectric .button{
+    border-left: 1px solid #ddd;
+    display: block;
+position: absolute;
+right: 0;
+top: 0;
+width: 28px;
+height: 30px;
+color: #F7F7F7;
+text-align: center;
+font: 0/0 a;
+}
+.pagination span.current.prev {
+    width: 40px;
+    height: 32px;
+    color: #ddd;
+    background-color: #fff;
+    border: 1px solid #ddd;
+ 
+}
+
+.pagination span{
+    display: inline-block;
+vertical-align: middle;
+padding: 6px 11px;
+height: 32px;
+margin-left: -1px;
+}
+.pagination span.current {
+    color: #fff;
+    background-color: #002E73;
+    border: 1px solid #002E73;
+    position: relative;
+}
+.pagination a{
+    color: #5b5b5b;
+    padding: 6px 11px;
+border: 1px solid #ddd;
+margin-left: -1px;
+background-color: #fff;
+height: 32px;
+display: inline-block;
+vertical-align: middle;
+}
+.pagination .next {
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  
+}
+.pagination .handler{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination input[name="go-page"] {
+    width: 36px;
+    height: 32px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.pagination button[type="button"] {
+
+    height: 32px;
+    padding: 9px 7px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    color: #666;
+    margin-left: 10px;
+
+}

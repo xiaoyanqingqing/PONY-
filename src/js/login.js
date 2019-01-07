@@ -10,3 +10,7 @@ require(["./requirejs.config"], () => {
 		location.href = "/";
 	})
 })
+
+
+
+			

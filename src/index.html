@@ -7,281 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>PONY</title>
 	<link rel="stylesheet" href="css/index.css">
-	<script type="text/javascript" src="/js/jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="/js/carousel.js"></script>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/index"></script>
+
 </head>
 
 <body>
-	<!-- header -->
-	<div class="header">
-		<!--  pony-ceiling-->
-		<div class="pony-ceiling">
-			<div class="pony-ceiling-container clearfix">
-				<ul>
-					<li>
-						<i class="iconfont icon-user"></i>
-						<a href="javascript:;" id="js-login-in">登录</a>
-						<span>/</span>
-						<a href="javascript:;" id="js-user-register">注册</a>
-					</li>
-					<li><a href="/help">帮助</a></li>
-					<li><i class="iconfont icon-icon3"></i><a class="online-customer-service" href="javascript:;">客服中心</a></li>
-				</ul>
-			</div>
-		</div>
-		<!--  pony-navbar-->
-		<div class="pony-navbar">
-			<div class="navbar-wrapper">
-				<a href="/">
-					<img class="pony-logo" src="static/images/logo.png" alt="pony" class="pony-logo">
-				</a>
-
-				<ul class="navbar-list">
-					<li class="category-item">
-						<div class="first-category">
-							<a href="">关于pony</a>
-						</div>
-
-						<div class="expand-panel">
-							<div class="panel-wrapper nav-content-wrapper">
-								<ul class="nav-links">
-									<li>
-										<a href="/pony/story">
-											<span>品牌故事</span>
-										</a>
-									</li>
-									<li>
-										<a href="/news">
-											<span>品牌动态</span>
-										</a>
-									</li>
-									<li>
-										<a href="/look">
-											<span>LOOK</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-
-					<li class="category-item">
-						<div class="first-category">
-							<a href="">#就这样PLAY#</a>
-						</div>
-
-						<div class="expand-panel">
-							<div class="panel-wrapper nav-content-wrapper">
-								<ul class="nav-imgs">
-									<li>
-										<a href="/d/ponyxjolin">
-											<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/12/14/e84c4ea5-c4cf-4869-861d-ee42c0be77d0.jpg"
-											 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-											<p>PONYxJOLIN合作款</p>
-										</a>
-									</li>
-									<li>
-										<a href="/d/thisispony">
-											<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/101bdd9c-219e-4552-b50a-a4cf708752f4.jpg"
-											 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-											<p>2018 FALL&amp;WINTER</p>
-										</a>
-									</li>
-									<li>
-										<a href="/d/wushichanggui">
-											<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/06/29/cb69b4cd-62b6-4076-af2d-0f17e8bf0656.jpg"
-											 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-											<p>2018 SU 無视常规</p>
-										</a>
-									</li>
-									<li>
-										<a href="/d/unchange">
-											<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/03/14/b4e8a378-0959-4224-a2a4-e6e2fb041d00.jpg"
-											 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-											<p>2018SP不变怎么了</p>
-										</a>
-									</li>
-									<li>
-										<a href="/d/justplay">
-											<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/09/04/866da89c-9aa1-4fdc-9abf-d6b4988c81d1.jpg"
-											 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-											<p>PONY就这样PLAY</p>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-
-					<li class="category-item">
-						<div class="first-category">
-							<a href=""> 男子</a>
-						</div>
-
-						<div class="expand-panel">
-							<div class="panel-wrapper">
-								<div class="custom-link clearfix">
-									<a href="/list?shopCatId&#x3D;115">
-										新品上市
-									</a>
-								</div>
-								<div class="second-category-wrapper">
-									<div class="second-category">
-										<div class="parent-name" title="鞋类">
-											<a href="/list?shopCatId=3">鞋类</a>
-										</div>
-										<div class="children-name">
-											<a class="child-name" title="复古慢跑鞋" href="/list?shopCatId=6">复古慢跑鞋</a>
-											<a class="child-name" title="篮球鞋" href="/list?shopCatId=7">篮球鞋</a>
-											<a class="child-name" title="板鞋" href="/list?shopCatId=8">板鞋</a>
-										</div>
-									</div>
-									<div class="second-category">
-										<div class="parent-name" title="服装">
-											<a href="/list?shopCatId=4">服装</a>
-										</div>
-										<div class="children-name">
-											<a class="child-name" title="上衣/T恤" href="/list?shopCatId=10">上衣/T恤</a>
-											<a class="child-name" title="卫衣/外套" href="/list?shopCatId=11">卫衣/外套</a>
-											<a class="child-name" title="下装" href="/list?shopCatId=12">下装</a>
-											<a class="child-name" title="配件" href="/list?shopCatId=13">配件</a>
-										</div>
-									</div>
-								</div>
-								<div class="category-images">
-									<a href="/list?shopCatId&#x3D;7">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/412cc6c0-d890-4b30-b176-afba406f22bd.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>高筒至尊M102</p>
-									</a>
-									<a href="/list?shopCatId&#x3D;4">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/f7986358-dae8-4c0c-88df-1ae81e9be0f3.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>2018冬季新款</p>
-									</a>
-									<a href="/list?shopCatId&#x3D;8">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/df6ccc6a-c88b-4615-9ae2-61304c0680be.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>新季A-Top</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="category-item">
-						<div class="first-category">
-							<a href="">女子</a>
-						</div>
-
-						<div class="expand-panel">
-							<div class="panel-wrapper">
-								<div class="custom-link clearfix">
-									<a href="/list?shopCatId&#x3D;116">
-										新品上市
-									</a>
-								</div>
-								<div class="second-category-wrapper">
-									<div class="second-category">
-										<div class="parent-name" title="鞋类">
-											<a href="/list?shopCatId=14">鞋类</a>
-										</div>
-										<div class="children-name">
-											<a class="child-name" title="复古慢跑鞋" href="/list?shopCatId=17">复古慢跑鞋</a>
-											<a class="child-name" title="篮球鞋" href="/list?shopCatId=18">篮球鞋</a>
-											<a class="child-name" title="板鞋" href="/list?shopCatId=19">板鞋</a>
-										</div>
-									</div>
-									<div class="second-category">
-										<div class="parent-name" title="服装">
-											<a href="/list?shopCatId=15">服装</a>
-										</div>
-										<div class="children-name">
-											<a class="child-name" title="上衣/T恤" href="/list?shopCatId=21">上衣/T恤</a>
-											<a class="child-name" title="卫衣/外套" href="/list?shopCatId=22">卫衣/外套</a>
-											<a class="child-name" title="下装" href="/list?shopCatId=23">下装</a>
-											<a class="child-name" title="配件" href="/list?shopCatId=24">配件</a>
-										</div>
-									</div>
-								</div>
-								<div class="category-images">
-									<a href="/list?shopCatId&#x3D;18">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/7eb0684e-89c1-4020-8df8-8b224e41a876.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>M102复古篮球鞋</p>
-									</a>
-									<a href="/list?shopCatId&#x3D;15">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/4bb9ee2e-2296-4f69-8b88-f98f67ca6180.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>2018明星爆款</p>
-									</a>
-									<a href="/list?shopCatId&#x3D;19">
-										<img data-original="https://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2018/11/09/cd191c0a-51b2-4d34-9f3b-dc7de04dd31a.jpg"
-										 src="/assets/images/other-images/loading-84eefd.png" alt="" class="lazy">
-										<p>复古板鞋A-Top</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</li>
-
-					<li class="category-item">
-						<div class="first-category">
-							<a href="">搜索店铺</a>
-						</div>
-
-
-						<div class="expand-panel">
-							<div class="panel-wrapper nav-content-wrapper">
-								<ul class="nav-links">
-									<li>
-										<a href="/">
-											<span>官方商城</span>
-										</a>
-									</li>
-									<li>
-										<a href="https://pony.tmall.com/index.htm?spm&#x3D;a1z10.1-b-s.w13789771-15275629129.1.M3QXr4">
-											<span>天猫旗舰店</span>
-										</a>
-									</li>
-									<li>
-										<a href="https://mall.jd.com/index-151048.html">
-											<span>京东旗舰店</span>
-										</a>
-									</li>
-									<li>
-										<a href="/nearby">
-											<img class="icon-img" src="http://e1xossfilehdd.blob.core.chinacloudapi.cn/fileserver01/2017/09/21/c0c85cc6-0c44-4a9b-b513-c937ed4fb201.png">
-											<span>FIND A STORE</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</li>
-
-
-				</ul>
-				<div class='pony-search eve-component' data-comp-name='PONY导航栏' data-comp-path='design/pony_navbar'>
-					<form class="form form-search" type="get" id="form-search" action="/list" data-hrefbase="">
-						<div class="input-search">
-							<button class="btn-search" type="submit"></button>
-							<input type="text" name="q" class="search-input" placeholder="搜索" value="" autocomplete="off">
-							<a href="/buyer/cart">
-
-							</a>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+	<header></header>
 	<!-- main -->
 	<div class="main">
 		<!-- 轮播图 -->
 		<div id="carousel">
 			<ul>
-				<li class="ac" style="opacity: 1"><a href="javascript:alert(0);"><img src="/static/images/1.jpeg" /></a></li>
+				<li class="ac" style="opacity: 1"><a href="http://localhost:2000/html/list.html"><img src="/static/images/1.jpeg" /></a></li>
 				<li><a href="javascript:alert(1);"><img src="/static/images/2.jpeg" /></a></li>
 				<li><a href="javascript:alert(2);"><img src="/static/images/3.jpeg" /></a></li>
 
@@ -352,7 +89,7 @@
 		<!-- star -->
 		<div class="star1">
 			<ul>
-				<li><a href="" target="_blank"> <img alt="" src="static/images/2 (9).jpeg"></a></li>
+				<li><a href="http://localhost:2000/html/list.html" target="_blank"> <img alt="" src="static/images/2 (9).jpeg"></a></li>
 				<li><a href="" target="_blank"> <img alt="" src="static/images/2 (19).jpeg"></a></li>
 				<li><a href="" target="_blank"> <img alt="" src="static/images/2 (13).jpeg"></a></li>
 				<li><a href="" target="_blank"> <img alt="" src="static/images/2 (11).jpeg"></a></li>
@@ -384,356 +121,58 @@
 			<ul>
 				<li>
 					<img src="static/images/2 (6).jpeg" alt="">
-					<p>84W1PR01KR    ¥439元</p>
-					<span data-href="">	立即购买</span>
+					<p>84W1PR01KR ¥439元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 
 				<li>
 					<img src="static/images/2 (16).jpeg" alt="">
-					<p>84W1MK01GR    ¥539元</p>
-					<span data-href="">	立即购买</span>
+					<p>84W1MK01GR ¥539元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 
 				<li>
 					<img src="static/images/2 (10).jpeg" alt="">
-					<p>83M1CW01KR    ¥639元</p>
-					<span data-href="">	立即购买</span>
+					<p>83M1CW01KR ¥639元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 				<li>
 					<img src="static/images/2 (4).jpeg" alt="">
-					<p>84M1M102DB    ¥699</p>
-					<span data-href="">	立即购买</span>
+					<p>84M1M102DB ¥699</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 				<li>
 					<img src="static/images/2 (18).jpeg" alt="">
-					<p>84W2GS57RD    ¥399元</p>
-					<span data-href="">	立即购买</span>
+					<p>84W2GS57RD ¥399元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 				<li>
 					<img src="static/images/2 (8).jpeg" alt="">
-					<p>83M2GS02BK    ¥399元</p>
-					<span data-href="">	立即购买</span>
+					<p>83M2GS02BK ¥399元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 				<li>
 					<img src="static/images/2 (20).jpeg" alt="">
-					<p>83W2QD51KK    ¥799元</p>
-					<span data-href="">	立即购买</span>
+					<p>83W2QD51KK ¥799元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
 				<li>
 					<img src="static/images/2 (2).jpeg" alt="">
-					<p>84U2OF56BK    ¥1599元</p>
-					<span data-href="">	立即购买</span>
+					<p>84U2OF56BK ¥1599元</p>
+					<span data-href=""> 立即购买</span>
 				</li>
-			
-				
+
+
 
 			</ul>
 
 		</div>
 
 	</div>
+	<footer></footer>
 
+	
 
-
-
-
-
-	</div>
-	<!-- footer -->
-	<footer class="eve-grid-auto eve-col-align-center" style="background-color:#002E73;">
-		<div class="eve-row">
-			<div class="eve-col-cu eve-col-align-center" style="width:100%;">
-				<div class="eve-row">
-					<div class="eve-col-cu" style="width:1184px;margin-top:30px;">
-						<div class="eve-row">
-							<!-- logo2 -->
-							<div class="eve-col-cu" style="width:130px;margin-top:20px;">
-								<div class="eve-component">
-									<div class='eve-image eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
-										<div>
-
-											<img alt="" style="width: 100%" src="static/images/logo2.png">
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 购物指南 -->
-							<div class="eve-col-cu" style="width:150px;margin-left:50px;margin-top:20px;">
-
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-
-
-													<p class=""><span style="color: rgb(255, 255, 255); font-size: 16px; font-weight: bold;" class="">购物指南</span></p>
-
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;margin-top:16px;">
-										<div class="eve-component eve-editing">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content" style="line-height:24px;">
-
-
-
-
-													<p><span style="color: rgb(255, 255, 255); font-size: 12px;"><a href="" target="_blank" rel="noopener noreferrer">查找店铺</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;"><a href="" target="_blank">购买须知</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;"><a href="" target="_blank">支付方式</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;"><a href="" target="_blank">配送方式</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;"><a href="" target="_blank">退换货政策</a></span></p>
-
-
-
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 关于我们 -->
-							<div class="eve-col-cu" style="width:150px;margin-top:20px;">
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-
-
-													<p><span style="color: rgb(255, 255, 255); font-weight: bold; font-size: 16px;" class="">关于我们</span></p>
-
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;margin-top:16px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content" style="line-height:24px;">
-
-
-
-
-													<p class=""><span style="color: rgb(255, 255, 255); font-size: 12px;"><a href="/pony/story" target="_blank"
-															 rel="noopener noreferrer">品牌故事</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;" class=""><a href="/news" target="_blank">品牌资讯</a></span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;" class=""><a href="/register" target="_blank">注册pony会员</a></span></p>
-													<p class=""><span style="color: rgb(255, 255, 255);font-size: 12px;"><a href="/help" target="_blank">获取帮助</a></span></p>
-
-
-
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Contacts us-->
-							<div class="eve-col-cu" style="width:150px;margin-top:20px;">
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-
-
-
-													<p><span style="color: rgb(255, 255, 255); font-weight: bold; font-size: 16px;" class="">Contacts</span><span
-														 style="color: rgb(255, 255, 255); font-size: 16px; font-weight: bold;" class=""> us</span></p>
-
-
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:100%;margin-top:16px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content" style="line-height:24px;">
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;">service@ponychina.com</span></p>
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px;">9:30-20:00</span></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 关注我们 -->
-							<div class="eve-col-cu" style="width:614px;margin-top:20px;">
-								<div class="eve-row">
-									<div class="eve-col-cu eve-col-align-right" style="width:500px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content" style="text-align:right;">
-
-													<p><span style="color: rgb(255, 255, 255); font-weight: bold; font-size: 16px;" class="">关注我们</span></p>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="eve-row">
-									<div class="eve-col-cu eve-col-align-right" style="width:500px;height:200px;margin-top:10px;">
-										<div class="eve-row">
-											<div class="eve-col-cu" style="width:100px;">
-												<div class="eve-row">
-													<div class="eve-col-cu" style="width:100px;">
-														<div class="eve-component">
-															<div class='eve-image eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
-																<div>
-
-																	<img alt="" style="width: 100%" src="static/images/weibo.png">
-
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-
-												<div class="eve-row">
-													<div class="eve-col-cu" style="width:100px;margin-top:-16px;margin-left:24px;">
-														<div class="eve-component">
-															<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-																<div class="text-content">
-
-																	<p><span style="color: rgb(255, 255, 255);font-size: 12px;">PONY微博</span></p>
-
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="eve-col-cu" style="width:100px;margin-left:20px;">
-												<div class="eve-row">
-													<div class="eve-col-cu" style="width:100px;">
-														<div class="eve-component">
-															<div class='eve-image eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
-																<div>
-
-																	<img alt="" style="width: 100%" src="static/images/weixin.png">
-
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="eve-row">
-													<div class="eve-col-cu" style="width:100px;margin-top:-16px;margin-left:24px;">
-														<div class="eve-component">
-															<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-																<div class="text-content">
-
-
-																	<p><span style="color: rgb(255, 255, 255);font-size: 12px;">PONY微信</span></p>
-
-
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="eve-row">
-					<div class="eve-col-cu" style="width:1184px;border-top:1px solid #666666;">
-						<div class="eve-row">
-							<div class="eve-col-cu" style="width:400px;height:30px;margin-top:8px;">
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:24px;">
-										<div class="eve-component">
-											<div class='eve-image eve-component' data-comp-name='图片' data-comp-path='eevee/image'>
-												<div>
-
-													<img alt="" style="width: 100%" src="static/images/guoqi.png">
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="eve-col-cu" style="width:350px;margin-left:10px;height:18px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-
-													<p class=""><span style="color: rgb(255, 255, 255);font-size: 12px;">中国大陆 ©
-															2017 PONY, Inc. 保留所有权利</span></p>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="eve-col-cu eve-col-align-right" style="width:784px;margin-top:8px;height:30px;">
-								<div class="eve-row">
-									<div class="eve-col-cu" style="width:150px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-													<p><span style="color: rgb(255, 255, 255);font-size: 12px">沪ICP备16020555号-2</span><br></p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="eve-col-cu" style="width:20px;"></div>
-									<div class="eve-col-cu" style="width:100px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-													<span style="color: rgb(255, 255, 255);font-size: 12px;">
-														上海工商</span><br>
-
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="eve-col-cu" style="width:20px;"></div>
-									<div class="eve-col-cu" style="width:200px;">
-										<div class="eve-component">
-											<div class='eve-text eve-component' data-comp-name='文字' data-comp-path='eevee/text'>
-												<div class="text-content">
-													<p><span style="color: rgb(255, 255, 255); font-size: 12px;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002081"
-															 target="_blank">沪公网安备&nbsp;31010902002081号</a></span></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- 侧边栏 -->
-	<div id="YSF-BTN-HOLDER"></div>
 </body>
 
 </html>
