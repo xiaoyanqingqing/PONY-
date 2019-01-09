@@ -6,14 +6,18 @@ require.config({
 		"cookie" : "/libs/jquery/jquery-plugins/jquery.cookie",
 		"header" : "/js/component/header",
 		"footer" : "/js/component/footer",
-		"items" : "/js/component/items",
+		"item" : "/js/component/item",
 		"url" : "/js/component/url",
 		"template": "/libs/template-web",
+		"zoom":"/libs/jquery/jquery-plugins/jquery.elevateZoom-3.0.8.min"
 		
 	},
 	//不符合AMD规范的模块，垫片
 	shim: {
 		"cookie" : {
+			deps: ["jquery"]
+		},
+		"zoom" : {
 			deps: ["jquery"]
 		}
 	}
