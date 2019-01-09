@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>register</title>
     <link rel="stylesheet" href="/css/register.css">
+    <script src="/libs/require/require.js" data-main="/js/register.js"></script>
 </head>
 <body>
     <!-- 顶部 -->
@@ -41,30 +42,18 @@
        <div class="register">
            <div class="register-div-form">
                <form  class="register-form" action="">
-                    
-                    <label for="">姓名：</label>
-                    <input class="real-name" type="text" name="realName" placeholder="1到10位字符" data-pattern="^.{1,10}$"><br>
                     <label for="">用户名：</label>
-                    <input class="user-name" type="text" name="userName" placeholder="1到25位字母、数字、下划线或中文" data-pattern="^(?!(^_.*|.*_$))(?!([0-9]+$))([\d_a-zA-Z\u4E00-\u9FA5]{1,25}$)"><br>
-                    <label for="">性别：</label>
-                    <input class="input-radio" type="radio" name="gender" value="1" checked/>
-                    <span class="male">男</span>
-                    <input class="input-radio" type="radio" name="gender" value="2" />
-                    <span>女</span></br>
-                    <label for="">生日：</label>
-                    <input type="text" class='js-input-datepicker' name='birthday'></br>
-                    <label for="">手机号：</label>
-                    <input class="mobile-phone" type="text" name="mobile"></br>
-                    <label for="">短信验证码：</label>
-                    <input class="verification-code" type="text" placeholder="请输入验证码" name="code"></br>
+                    <input class="user-name" type="text" id="userName" placeholder="1到25位字母、数字、下划线或中文" ><br> 
+                    <label for="">邮箱：</label>
+                    <input class="email" type="text" id="email" placeholder="1到25位字母、数字、下划线或中文" ><br> 
                     <label for="">输入密码：</label>
-                    <input class="password" type="password" name="password" placeholder="6-16位密码" data-pattern="^[^\s+]{6,16}$"></br>
+                    <input class="password" type="password" id="password"></br>
                     <label for="">确认密码：</label>
-                    <input class="confirm-password" type="password" placeholder="请再次输入密码"></br>
+                    <input class="confirm-password" type="password" id="password2" placeholder="请再次输入密码"></br>
                     <label></label>
                     <input type="checkbox" class="input-checkbox protocol-checked" checked><a href="javascript:void(0);" id="user-licence">YYsports用户协议</a></br>
                     <label></label>
-                    <button type="submit" id="btn-submit" class="btn btn-large btn-primary" disabled='disabled'>注册</button>
+                    <button  id="btn-submit" class="btn btn-large btn-primary" >注册</button>
                </form>
            </div>  
        </div>

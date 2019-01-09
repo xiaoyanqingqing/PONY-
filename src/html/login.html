@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="/css/login.css">
+    <script src="/libs/require/require.js" data-main="/js/login.js"></script>
 </head>
 <body>
     <div class="main-login">
@@ -17,16 +18,17 @@
             <div class="outer-login">
                 <div class="login-container">
                     <div class="component-login">
-                        <form action="">
+                        <form action="post">
                                 <fieldset>
                                         <legend>登录</legend>
                                         
-                                          <input type="text" name="username"  id="username" placeholder="请输入用户名、手机或邮箱"><br>
-                                          <input id="password" type="password" class="form-control password" name="password" placeholder="请输入密码"> <br> 
+                                          <input type="text" name="username"  id="userName" placeholder="请输入用户名、手机或邮箱"><br>
+                                          <input id="password" type="password" class="form-control password" id="password" placeholder="请输入密码"> <br> 
                                           <button id="btn">立即登陆</button><br>
+                                          <input type="checkbox" id="rememberMe" class="input-checkbox protocol-checked" checked><a href="javascript:void(0);" id="user-licence">记住我</a></br>
                                           <div class="control-group">
                                                 <a  href="">忘记密码?</a>
-                                                <a  href="/register.html">立即注册</a>
+                                                <a  href="/html/register.html">立即注册</a>
 
                                           </div>
                                          

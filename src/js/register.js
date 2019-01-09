@@ -1,32 +1,43 @@
 //注册业务逻辑
 require(["./requirejs.config"], () => {
 	require(["jquery"], () => {
-		/*$(function(){
-			console.log(1);
-		})*/
-
+		
 		//注册逻辑
-		$("#regBtn").on("click", function(e){
+		$("#btn-submit").on("click", function(e){
+			console.log(22)
 			// localhost/api/v1/register.php
 			// post
 			e.preventDefault();
+			console.log( $("#email").val());
 			//验证用户名密码合法性，验证通过了才会发送ajax
-			$.ajax({
-				url: "http://localhost/api/v1/register.php",
-				type: "post",
-				data: {
-					name: $("#username").val(),
-					password: $("#password").val()
-				},
-				success: function(res){
-					console.log(res);
-					if(res.code === 1){
-						alert("注册成功，马上去登录");
-						location.href = "/html/login.html";
-					}
-				},
-				dataType: "json"
-			})
+			// $.ajax({
+			// 	url: "http://localhost/api/v1/register.php",
+			// 	type: "post",
+			// 	data: {
+			// 		name: $("#userName").val(),
+			// 		email: $("#email").val(),
+			// 		password: $("#password").val(),
+			// 		password2: $("#password2").val()
+			// 	},
+			// 	success: function(res){
+			// 		alert(11);
+			// 	},
+			// 	dataType: "json"
+			// })
+			$.post("http://localhost/api/v1/register.php",{
+						name: $("#userName").val(),
+						email: $("#email").val(),
+						password: $("#password").val(),
+						password2: $("#password2").val()
+					},function(res){
+								 console.log(res)
+								 if(res.res_code === 1){
+									 console.log(11)
+									alert("注册成功，马上去登录");
+									location.href = "/html/login.html";
+								}
+								}
+						 	,"json")
 		})
 	})
 })

@@ -74,7 +74,7 @@ input{
     width: 280px;
     height: 35px;
     margin-bottom: 15px;
-    border: 1px solid #ddd；
+    border: 1px solid #ddd;
 
 }
 button{
@@ -93,6 +93,16 @@ button{
     margin-bottom: 15px;
     padding-bottom: 20px;
     font-size: 12px;
+}
+input[type=checkbox] {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+    padding: 0;
+    vertical-align: text-top;
+}
+#user-licence {
+    color: #c00;
 }
 .control-group a{
     color: #999;
