@@ -3,7 +3,346 @@
 @import "./component/footer.scss";
 .main{
     width: 100%;
+    height: auto;
     margin-top: 80px;
+    text-align: left;
+    min-height: 10px;
+   
+}
+.main-wrap{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 10px;
+    text-align: left;
+    margin-left: 0px;
+    white-space: normal;
+}
+// 顶部
+.main-wrap .top{
+    width: 100%;
+    height: 478px;
+    text-align: center;
+   
+}
+.top-wrap{
+    width: 1184px;
+    height: 478px;
+    margin: 0 auto;
+    border:1px solid red ;
+}
+.detail {
+    width: 1184px;
+    height: 453px;
+    display: block;
+    margin: 0 auto 25px;
+    box-sizing: content-box;
+}
+.detail-left {
+    width: 517px;
+    height: 453px;
+    float: left;
+}
+// 左边顶部
+.image-manage{
+    width: 517px;
+    height: 410px;
+}
+// 左边轮播
+ .carousel-wrap {
+    width: 61px;
+    height: 280px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 23px;
+    padding: 20px 0;
+    position: relative;
+    box-sizing: content-box;
+}
+.carousel-wrap .prev{
+    position: absolute;
+    top:0;
+    display: block;
+    width: 61px;
+    height: 12px;
+  
+}
+.carousel-wrap .prev >img{
+    width: 61px;
+    height: 12px;
+    margin-top: -9px;
+    border: 0;
+}
+.carousel-wrap  .carousel {
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
+    width: 61px;
+    height: 280px;
+}
+.carousel-wrap  .carousel ul{
+    box-sizing: content-box;
+    position: absolute;
+    top: 0px;
+    width: 61px;
+}
+.carousel-wrap  .carousel ul li{
+   height: 61px;
+    width: 61px;
+    margin: 7px 0;
+    box-sizing: content-box;
 }
 
 
+
+.carousel-wrap .next{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 61px;
+    height: 12px;
+
+}
+
+
+
+
+
+.image-manage a{
+    display: inline-block;
+    width: 401px;
+    height: 401px;
+}
+
+// 左边底部
+.share {
+    float: left;
+    margin-left: 84px;
+    line-height: 42px;
+}
+.share  span {
+    font-size: 14px;
+    margin-right: 6px;
+    color: #5b5b5b;
+    float: left;
+}
+.social-share{
+    width: 64px;
+    height: 42px;
+    float: left;
+}
+.social-share a{
+    display:inline-block;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    position: relative;
+
+}
+.favourite{
+    width: 87px;
+float: left;}
+.favourite-btn {
+    width: 9077px;
+    display:inline-block ;
+    color: #5b5b5b;
+    margin-left: 10px;
+}
+.favourite-btn>span{
+    width: 77px;
+    display:inline-block ;
+    text-align: right;
+    background: url(/static/images/shouchang.png)no-repeat left;
+}
+// 右边
+.detail-right {
+    margin-left: 517px;
+    width: 667px;
+    height: 336px;
+    box-sizing: content-box;
+}
+.detail-right h4{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #1e1e1e;
+    margin: 0 0 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 635px;
+    text-align: left;
+}
+.detail-right p{
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    color: #1e1e1e;
+    font-size: 16px;
+    text-align: left;
+}
+.item-skus {
+    margin-top: 12px;
+    padding-top: 12px;
+    position: relative;
+    border: 1px solid transparent;
+    box-sizing: content-box;
+}
+.item-skus ul{
+    width: 665px;
+    height: 245px;  
+}
+.item-skus> ul >li{
+text-align: left;
+}
+.sku-items-label {
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+    line-height: 1;
+    margin: 0 0 12px;
+}
+.sku-attr {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 6px 9px;
+    margin: 0 8px 8px 0;
+    color: #5b5b5b;
+    line-height: 12px;
+    font-size: 12px;
+    position: relative;
+    vertical-align: top;
+}
+.control-group {
+    margin-top: 8px;
+}
+.control-group .sku-attr[disabled] {
+    cursor: not-allowed;
+    color: #999;
+    background-color: #f5f5f5;
+}
+.controls {
+    display: block;
+    width: 665px;
+    height: 24px;
+    box-sizing: content-box;
+}
+.input-amount.group-small {
+    height: 24px;
+    width: 77px;
+    display: inline-block;
+}
+.input-amount.group-small a {
+    width: 24px;
+    line-height: 19px;
+}
+.input-amount.group-small a img {
+    width: 24px;
+    height: 24px;
+   
+}
+.input-amount.group-small input {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    vertical-align: top;
+}
+.total-stock {
+    
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    color: #5b5b5b;
+    line-height: 24px;
+    font-size: 12px;
+    margin-left: 16px;
+    box-sizing: content-box;
+}
+
+.item-skus #choose-btns {
+    position: relative;
+    margin-top: 23px;
+    font-size: 0;
+    box-sizing: content-box;
+    width: 665px;
+    height: 42px;
+}
+.item-skus #choose-btns .js-buy-now {
+    color: #fff;
+    border-color: #d10000;
+    background-color: #d10000;
+}
+.item-skus #choose-btns .btn {
+    font-size: 16px;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding: 0;
+    margin-right: 20px;
+}
+.connect-service {
+    color: #5b5b5b;
+    line-height: 42px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.item-skus #choose-btns img{
+   width: 24px;
+   height: 19px;
+}
+.item-skus #choose-btns span {
+    font-size: 14px;
+}
+// 底部
+.main-wrap .bottom{
+    width: 100%;
+    height: 2519px;
+    text-align: center;
+    
+}
+.bottom-wrap{
+    width: 1184px;
+    height:2519px;
+    margin: 0 auto;
+    
+}
+// ul
+.bottom-wrap> ul{
+    display: block;
+    width: 1184px;
+    height: 50px;
+    border-bottom:1px solid #ddd ; 
+}
+.bottom-wrap> ul>li{
+    width: 88px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    position: relative;
+}
+li >a{
+    font-size: 16px;
+    margin-right: 24px;
+    font-size: 16px;
+    color: #999;
+    white-space: nowrap;
+    padding: 16px 0;
+    margin-right: 24px;
+}
+li.active > a {
+    color: #1e1e1e;
+    border-top: none;
+    padding: 16px 0;
+    font-size: 16px;
+}
+// contents
+.contents{
+width: 1184px;
+height: 2468px;
+}
+.contents-wrap{
+    width: 1184px;
+    height: 2444px;
+    margin: 12px 0;
+    text-align: center;
+}
