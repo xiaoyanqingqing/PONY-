@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>cart</title>
+		<link rel="stylesheet" href="/css/cart.css">
+		<script src="/libs/require/require.js" data-main="/js/cart.js"></script>
+	</head>
+	<body>
+		<div class="component-ceiling">
+				<div class="nav">
+								<div class="left">
+												<span >下午好</span>
+												<span >
+														欢迎来到电商平台
+													，
+												</span>
+												<span>
+														<a href="http://localhost:2000/html/login.html" >退出登录</a>
+														
+												</span>
+								</div>
+								<ul>
+										<li><a href=""></a> 个人中心</li>
+										<li><a href=""></a>我的订单</li>
+										<li><a href=""></a>购物车 <span >0</span> 件</li>
+								</ul>
+				
+				</div>
+		</div>
+		<div class="main">
+			<div id="box">
+		<table>
+			<thead>
+			<tr>
+	            <th><label>全选：<input type="checkbox" id="allCheck"/></label></th>
+	           
+	            <th>名称</th>
+	            <th>单价</th>
+	            <th>数量</th>
+	            <th>编辑</th>
+	        </tr>
+		</thead>
+        <tbody>
+	       
+	        
+        </tbody>
+        <tfoot>
+        	<tr>
+        		<td colspan="6">总价：￥<b id="money"></b></td>
+        	</tr>
+        </tfoot>
+   </table>
+</div>
+		</div>
+	</body>
+</html>

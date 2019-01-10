@@ -48,6 +48,7 @@
     width: 517px;
     height: 410px;
 }
+
 // 左边轮播
  .carousel-wrap {
     width: 61px;
@@ -93,7 +94,7 @@
     box-sizing: content-box;
 }
 
-
+.image-manage  a img.ac{display: inline-block;}
 
 .carousel-wrap .next{
     position: absolute;
@@ -107,6 +108,14 @@
     display: inline-block;
     width: 401px;
     height: 401px;
+		overflow: hidden;
+		position: relative;
+		
+}
+.image-manage a img{
+	position:absolute;
+	left:0px;
+	
 }
 
 // 左边底部

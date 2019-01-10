@@ -25,11 +25,14 @@ define(["jquery", "template"], ($, template) => {
 						
 						$("#carousel ul").html(html);
 
-
 					}
 				}
 			})
 			
+		});
+		$.getJSON("http://rap2api.taobao.org/app/mock/data/764002",(data)=>{
+			let html1 = template("detail1",{detail1:data.res_body.list});
+			$(".detail-right").html(html1);
 		})
 		
 		

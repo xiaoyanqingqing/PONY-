@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>detail</title>
     <link rel="stylesheet" href="/css/detail.css">
-    <script src="/libs/require/require.js" data-main="/js/detail.js"></script>
+    <script src="/libs/require/require.js" data-main="/js/detail"></script>
 </head>
 
 <body>
@@ -18,22 +18,20 @@
                 <div class="top-wrap">
                     <div class="detail">
                         <div class="detail-left">
-                            <div class="image-manage">
+                            <div class="image-manage" id="tab">
                                 <div class="carousel-wrap">
                                     <div class="carousel" id="carousel">
-                                        <!-- <ul>
-                                            <li><img src="/static/images/1(11).jpeg"></li>
-                                            <li><img src="../static/images/1(12).jpeg"></li>
-                                            <li><img src="../static/images/1(13).jpeg"></li>
-                                            <li><img src="../static/images/1(14).jpeg"></li>
-                                            <li><img src="../static/images/2(11).jpeg"></li>
-                                            <li><img src="../static/images/2(12).jpeg"></li>
-                                            <li><img src="../static/images/2(13).jpeg"></li>
-                                            <li><img src="../static/images/2(14).jpeg"></li>
-                                        </ul> -->
+                                        <ul>
+            
+                                        </ul> 
                                     </div>
                                 </div>
-                                <a href=""><img src="../static/images/2 (10).jpeg" alt="" style="width:401px;height:401px;"></a>
+                                <a href="">
+									<img  class="ac" src="../static/images/2 (10).jpeg" alt="" style="width:401px;height:401px;">
+									<img src="../static/images/e.jpeg" alt="" style="width:401px;height:401px;">
+									<img src="../static/images/w.jpeg" alt="" style="width:401px;height:401px;">
+									<img src="../static/images/q.jpeg" alt="" style="width:401px;height:401px;">
+									</a>
                             </div>
                             <span class="share"><span>分享到</span>
                                 <div class="social-share">
@@ -44,9 +42,12 @@
                             </span>
                         </div>
                         <div class="detail-right">
-                            
-                            <h4>PONY(波尼)经典系列女鞋83W1CW01DB</h4>
-                            <p>￥639.00</p>
+                            <script type="text/html" id="detail1">
+                               {{each detail1 curr}}
+                                <h4 class="title">{{ curr.title }}</h4>
+                                <p class="price">{{ curr.price }}</p>
+                                {{/each}}
+                           </script>
                             <div class="item-skus">
                                 <ul>
                                     <li>
@@ -102,7 +103,7 @@
                                         </div>
                                     </li>
                                     <li id="choose-btns"><button class="btn btn-secondary js-buy-now" type="button">立即购买</button>
-                                        <button class="btn btn-secondary js-add-cart" type="button">加入购物车</button>
+                                        <button class="btn btn-secondary js-add-cart" type="button" data_href="/html/register.html"> 加入购物车</button>
                                          <a href="javascript:;" class="online-customer-service connect-service">
                                              <img src="../static/images/wx.png" alt=""> <span>联系客服</span>
                                             </a>
@@ -128,7 +129,6 @@
         </div>
     </div>
     <footer></footer>
-    
 </body>
 
 </html>
