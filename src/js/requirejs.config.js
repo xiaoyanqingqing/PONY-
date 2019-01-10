@@ -7,6 +7,7 @@ require.config({
 		"header" : "/js/component/header",
 		"footer" : "/js/component/footer",
 		"item" : "/js/component/item",
+		"detail_item" : "/js/component/detail_item",
 		"url" : "/js/component/url",
 		"template": "/libs/template-web",
 		"zoom":"/libs/jquery/jquery-plugins/jquery.elevateZoom-3.0.8.min"

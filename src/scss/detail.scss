@@ -103,11 +103,6 @@
     height: 12px;
 
 }
-
-
-
-
-
 .image-manage a{
     display: inline-block;
     width: 401px;
@@ -135,10 +130,11 @@
     display:inline-block;
     width: 32px;
     height: 32px;
-    margin: auto;
+    margin: 2px auto;
     position: relative;
 
 }
+
 .favourite{
     width: 87px;
 float: left;}
@@ -150,9 +146,10 @@ float: left;}
 }
 .favourite-btn>span{
     width: 77px;
+    height: 42px;
     display:inline-block ;
     text-align: right;
-    background: url(/static/images/shouchang.png)no-repeat left;
+    background: url(/static/images/sc.png)no-repeat left;
 }
 // 右边
 .detail-right {
@@ -227,7 +224,7 @@ text-align: left;
 }
 .input-amount.group-small {
     height: 24px;
-    width: 77px;
+    width: 83px;
     display: inline-block;
 }
 .input-amount.group-small a {

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>detail_item</title>
+    
+    <script type="text/javascript" src="/libs/require/require.js" data-main="/js/component/detail_item.js"></script>
+</head>
+<body>
+    <header></header>
+
+    <main>
+            <ul>
+                    <script type="text/html" id="detail_template">
+                        {{each detail detail_item i}}
+                    <li>
+                        <div class="img">
+                           <img src="{{ detail_item.img }}" alt="">
+
+                        </div>
+                    </li>
+                    {{/each}}
+                </script>
+            </ul>
+
+               
+                    
+                     
+                       
+                
+    </main>
+    <footer></footer>
+</body>
+</html>

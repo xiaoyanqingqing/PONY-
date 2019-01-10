@@ -83,42 +83,6 @@ header{
     font-weight: 700;
     color: #fff;
 }
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel {
-    position: absolute;
-    z-index: 9;
-    width: 100%;
-    left: 0;
-    display: none;
-    transition: all .2s ease;
-    background-color: rgba(255,255,255,.96);
-}
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel .panel-wrapper.nav-content-wrapper {
-    margin: 9px auto;
-    padding: 0 128px;
-}
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel .panel-wrapper {
-    width: 1184px;
-    line-height: 1;
-    overflow: hidden;
-}
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel .panel-wrapper.nav-content-wrapper li {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-}
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel .panel-wrapper.nav-content-wrapper li a {
-    display: inline-block;
-    color: #181410;
-    padding: 15px 20px;
-    font-size: 0;
-}
-.pony-navbar .navbar-wrapper .navbar-list .expand-panel .panel-wrapper.nav-content-wrapper li a span {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 26px;
-    vertical-align: top;
-}
-
 /*  */
 .pony-search {
     float: right;

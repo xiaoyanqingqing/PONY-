@@ -54,6 +54,8 @@ require(["requirejs.config"],function(){
                     return autoPlay;
                 })())
             }
+           
+           
         })
         new index();
 	})
