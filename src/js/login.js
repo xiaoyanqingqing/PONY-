@@ -31,7 +31,8 @@ require(["./requirejs.config"], () => {
 							JSON.stringify({
 								id: res.res_body.id,
 								name: res.res_body.username
-							})
+							}),
+							{path:"/"}
 						);
 					}
 					if (confirm("登录成功，去首页")) {

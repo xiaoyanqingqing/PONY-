@@ -148,7 +148,7 @@
     width: 87px;
 float: left;}
 .favourite-btn {
-    width: 9077px;
+    width: 97px;
     display:inline-block ;
     color: #5b5b5b;
     margin-left: 10px;
@@ -271,6 +271,8 @@ text-align: left;
     box-sizing: content-box;
     width: 665px;
     height: 42px;
+  
+   
 }
 .item-skus #choose-btns .js-buy-now {
     color: #fff;
@@ -281,9 +283,14 @@ text-align: left;
     font-size: 16px;
     width: 180px;
     height: 40px;
+    line-height: 40px;
     text-align: center;
     padding: 0;
     margin-right: 20px;
+    float: left;
+}
+.item-skus #choose-btns .btn a{
+    color: #000;
 }
 .connect-service {
     color: #5b5b5b;

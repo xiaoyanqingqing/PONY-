@@ -42,13 +42,16 @@
                             </span>
                         </div>
                         <div class="detail-right">
-                            <script type="text/html" id="detail1">
-                               {{each detail1 curr}}
-                                <h4 class="title">{{ curr.title }}</h4>
-                                <p class="price">{{ curr.price }}</p>
-                                {{/each}}
-                           </script>
-                            <div class="item-skus">
+                            <div class="one">
+                                <script type="text/html" id="detail1">
+                                {{each detail1 curr}}
+                                    <div class="id" >{{ curr.id }}</div>
+                                    <h4 class="title">{{ curr.title }}</h4>
+                                    <p class="price">{{ curr.price }}</p>
+                                    {{/each}}
+                            </script>
+                             </div>
+                            <div class="item-skus" id="list">
                                 <ul>
                                     <li>
                                         <div class="control-group first"><label class="dt sku-items-label" for="input-name">颜色</label>
@@ -102,11 +105,13 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li id="choose-btns"><button class="btn btn-secondary js-buy-now" type="button">立即购买</button>
-                                        <button class="btn btn-secondary js-add-cart" type="button" data_href="/html/register.html"> 加入购物车</button>
-                                         <a href="javascript:;" class="online-customer-service connect-service">
-                                             <img src="../static/images/wx.png" alt=""> <span>联系客服</span>
-                                            </a>
+                                    <li id="choose-btns">
+                                        <div class="btn btn-secondary js-buy-now" >立即购买</div>
+                                        <div class="btn btn-secondary js-add-cart" >   加入购物车</div>
+                                        <div class="btn btn-secondary js-watch-cart" >
+                                            <a href="http://localhost:2000/html/cart.html"> 查看购物车</a>
+                                           </div>
+                                        
                                         </li>
                                 </ul>
                             </div>

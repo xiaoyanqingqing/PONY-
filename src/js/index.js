@@ -50,7 +50,7 @@ require(["requirejs.config"],function(){
                 }, (function autoPlay() {
                     timer = setInterval(() => {
                         $("#goNext").trigger("click");
-                    }, 4000);
+                    }, 2000);
                     return autoPlay;
                 })())
             }

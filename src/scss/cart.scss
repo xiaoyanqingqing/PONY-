@@ -34,16 +34,15 @@
 .main{width: 100%;height: auto;}
 #box{ width:1184px; margin:100px auto}
 table,th,td{ border:1px solid #000; border-collapse:collapse}
-td,th{ width:200px; height:30px; padding:10px}
+td,th{ width:280px; height:30px; padding:10px}
 input[type="text"]{ display:none; height:24px; width:60px; border:1px solid #ccc;}
 tbody tr td:first-child{text-align: center;}
 tfoot td{text-align: right;}
 .editBtn{ color:#666}
 .delBtn{ color:red}
-.okBtn,.cancelBtn{ display:none}
+.okBtn,.cancelBtn{ display:none; color:red}
 
 .edit span{ display:none}
 .edit input[type="text"]{ display:inline-block}
 .edit .editBtn,.edit .delBtn{ display:none}
 .edit .okBtn,.edit .cancelBtn{ display:inline}
-

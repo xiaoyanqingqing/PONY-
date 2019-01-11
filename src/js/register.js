@@ -1,6 +1,6 @@
 //注册业务逻辑
 require(["./requirejs.config"], () => {
-	require(["jquery"], () => {
+	require(["jquery","cookie"], () => {
 		
 		//注册逻辑
 		$("#btn-submit").on("click", function(e){
@@ -33,6 +33,14 @@ require(["./requirejs.config"], () => {
 								 console.log(res)
 								 if(res.res_code === 1){
 									 console.log(11)
+									 $.cookie(
+										"user",
+										JSON.stringify({
+											
+											name:name
+										}),
+										{path:"/"}
+									);
 									alert("注册成功，马上去登录");
 									location.href = "/html/login.html";
 								}
